@@ -1,0 +1,75 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .sched {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 576px) {
+  .login {
+    max-width: 400px;
+  }
+}
+
+.mynavbar {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+/* Add your custom styles here */
+.item {
+  /* border: 1px solid #ddd; */
+  margin: 5px;
+  padding: 10px;
+  /* text-align: center; */
+}
+
+.radio:checked {
+  background-color: black;
+  border-color: black;
+}
+
+.delete-form {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
+
+.busy-btn {
+  border: 3px solid;
+  border-color: black;
+  color: white !important;
+  background-color: black !important;
+}
+
+.available-btn {
+  border: 3px solid;
+  border-color: black;
+}
+
+.available-btn:hover {
+  border: 3px solid;
+  border-color: black;
+  color: white !important;
+  background-color: black !important;
+}
+
+.available:checked + .available-btn {
+  border: 3px solid;
+  border-color: black;
+  color: white !important;
+  background-color: black !important;
+}
+
+.busy:checked + .busy-btn {
+  border: 3px solid;
+  border-color: black;
+  color: black !important;
+  background-color: white !important;
+}
